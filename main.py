@@ -15,14 +15,14 @@ try:
 	from bs4 import BeautifulSoup as parser
 except ModuleNotFoundError:
 	print("[!] Module Bs4 Belum Terinstall")
-	os.system("python -m pip install bs4")
+	os.system("pip install bs4")
 except req.exceptions.ConnectionError:
 	print("Koneksi Jaringan Buruk!")
 try:
 	import pyfiglet
 except ModuleNotFoundError:
 	print("[!] Module Pyfiglet Belum Terinstall")
-	os.system("puthon -m pip install pyfiglet")
+	os.system("pip install pyfiglet")
 except req.exceptions.ConnectionError:
 	print("Koneksi Jaringan Buruk!")
 try:
