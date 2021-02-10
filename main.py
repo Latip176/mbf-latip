@@ -168,17 +168,6 @@ def sendTeman():
 	print(f"\nJumlah Hasil Dapet\nOK : {ok}\nCP : {cp}\nSemua : {semoa}\n")
 	balek = input("[KEMBALI]")
 	opening2()
-def jum(tar):
-	try:
-		t=open("tt.txt","r").read()
-		kon=json.loads(req.get(f"https://graph.facebook.com/{tar}/friends?access_token={t}").text)
-		for su in kon["data"]:
-			k=[]
-			k.append(su["id"])
-		for su1 in k:
-			print("Jumlah ID Publik :",len(su1),"\n")
-	except KeyError:
-		print("f")
 def sendMasal():
 	os.system("clear")
 	om=pyfiglet.figlet_format("TemanPub")
@@ -188,7 +177,6 @@ def sendMasal():
 		t = open("tt.txt","r").read()
 		mmk=json.loads(req.get(f"https://graph.facebook.com/{tar}?access_token={t}").text)
 		print("\nNama Target Publik :",mmk["name"])
-		jum(tar)
 		time.sleep(2)
 		print("[+] Sedang Mengambil Data...\n[!] CTRL + Z Untuk Stop Crack\n")
 	except KeyError:
